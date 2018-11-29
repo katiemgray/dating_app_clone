@@ -10,6 +10,7 @@ def generate_form():
 
 @app.route('/profile_page')
 def generate_profile():
+    """ takes in input from from and renders profile template"""
     name = request.args['name']
     age = request.args['age']
     location = request.args['location']
